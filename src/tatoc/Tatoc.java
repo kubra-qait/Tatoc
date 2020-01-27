@@ -1,14 +1,14 @@
 package tatoc;
 
-public class Tatoc {
+public class Tatoc  {
 
 	public static void main(String[] args) {
-		Tatoclocators.launchTatoc();
-		Tatoclocators.gridGate();
-		Tatoclocators.frameDungeon();
-		Tatoclocators.dragAround();
-		Tatoclocators.popupWindows();
-		Tatoclocators.cookieHandling();
+		TatocTasks.launchTatoc();
+		TatocTasks.gridGate();
+		TatocTasks.frameDungeon();
+		TatocTasks.dragAround();
+		TatocTasks.popupWindows();
+		TatocTasks.cookieHandling();
 	//	Tatoclocators.closeTatoc();
 	}
 }

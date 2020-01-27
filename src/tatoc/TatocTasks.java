@@ -8,11 +8,12 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 //import okhttp3.Cookie;
 
-public class Tatoclocators {
+public class TatocTasks {
 
 	static WebDriver driver;
 
@@ -54,7 +55,8 @@ public class Tatoclocators {
 		WebElement dropBox = driver.findElement(By.id("dropbox"));
 		WebElement dragMeBtn = driver.findElement(By.id("dragbox"));
 		Actions dragDrop = new Actions(driver);
-		dragDrop.dragAndDrop(dragMeBtn, dropBox).perform();
+		Action action = dragDrop.dragAndDrop(dragMeBtn, dropBox).build();
+		action.perform();
 		driver.findElement(By.xpath("//a[text() = 'Proceed']")).click();
 	}
 
